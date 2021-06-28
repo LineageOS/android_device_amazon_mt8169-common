@@ -88,5 +88,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.software.verified_boot.prebuilt.xml
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/mt8169-common/mt8169-common-vendor.mk)
