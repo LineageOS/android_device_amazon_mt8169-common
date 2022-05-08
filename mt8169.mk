@@ -8,7 +8,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.emmc
+    fstab.emmc \
+    fstab.emmc.vendor_ramdisk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
