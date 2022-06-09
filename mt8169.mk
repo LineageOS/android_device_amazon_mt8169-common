@@ -16,6 +16,11 @@ PRODUCT_COPY_FILES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# GMS
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE=gms_minimal.mk
+endif
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
