@@ -125,6 +125,7 @@ PRODUCT_PACKAGES += \
     MssiFrameworkOverlay \
     MssiNetworkStackOverlay \
     MssiWifiOverlay \
+    SystemUIOverlayCommon \
     TetheringResOverlayCommon
 
 # Permissions
