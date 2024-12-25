@@ -125,8 +125,8 @@ PRODUCT_PACKAGES += \
     Launcher3OverlayCommon \
     LineageSettingsOverlayCommon \
     LineageSettingsProviderOverlayCommon \
-    SystemUIOverlayCommon \
-    TetheringResOverlayCommon
+    NcmTetheringOverlay \
+    SystemUIOverlayCommon
 
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
