@@ -121,6 +121,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCommon \
+    Launcher3OverlayCommon \
     LineageSettingsOverlayCommon \
     MssiFrameworkOverlay \
     MssiNetworkStackOverlay \
