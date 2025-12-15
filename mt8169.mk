@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayCommon \
     Launcher3OverlayCommon \
     LineageSettingsOverlayCommon \
+    LineageSettingsProviderOverlayCommon \
     MssiFrameworkOverlay \
     MssiNetworkStackOverlay \
     MssiWifiOverlay \
