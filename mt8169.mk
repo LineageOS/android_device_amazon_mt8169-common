@@ -30,6 +30,10 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,0 1)
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.mediatek
+
 # Non_ab_device
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
