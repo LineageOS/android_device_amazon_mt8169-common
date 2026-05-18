@@ -15,6 +15,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Non_ab_device
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt8169.rc
