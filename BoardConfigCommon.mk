@@ -118,5 +118,10 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 0
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix_aidl.xml \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
+
 # Inherit the proprietary files
 include vendor/amazon/mt8169-common/BoardConfigVendor.mk
