@@ -95,6 +95,9 @@ TARGET_BOARD_PLATFORM := mt8169
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.emmc
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
+# SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Verified Boot
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_ENABLE := true
