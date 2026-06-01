@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.emmc \
     fstab.emmc.vendor_ramdisk \
+    fstab.enableswap \
     init.insmod.sh \
     init.mt8169.rc \
     ueventd.mt8169.rc
