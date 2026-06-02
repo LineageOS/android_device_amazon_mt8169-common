@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.emmc \
-    fstab.emmc.vendor_ramdisk
+    fstab.emmc.vendor_ramdisk \
+    ueventd.mt8169.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
