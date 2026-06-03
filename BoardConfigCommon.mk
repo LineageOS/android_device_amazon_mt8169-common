@@ -97,6 +97,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt8169
 
+# Properties
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.emmc
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888

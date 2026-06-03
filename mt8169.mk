@@ -67,6 +67,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.faketouch.prebuilt.xml
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek \
+    init.mt8169.usb.rc
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb.accessory.prebuilt.xml \
+    android.hardware.usb.host.prebuilt.xml
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+
 # Verified Boot
 PRODUCT_PACKAGES += \
     android.software.verified_boot.prebuilt.xml
