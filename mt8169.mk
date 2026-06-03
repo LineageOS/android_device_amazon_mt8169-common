@@ -34,6 +34,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/amazon \
     hardware/mediatek
 
+# SPL
+VENDOR_SECURITY_PATCH := 2021-03-05
+
 # Touch
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
