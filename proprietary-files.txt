@@ -110,6 +110,15 @@ vendor/lib64/libnvram.so;DISABLE_CHECKELF
 vendor/lib/libtz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libtz_uree.so;DISABLE_CHECKELF
 
+# Wi-Fi
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
+vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+
 # WMT
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader

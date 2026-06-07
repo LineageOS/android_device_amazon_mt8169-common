@@ -1,6 +1,9 @@
 on post-fs-data
     mkdir /data/vendor/stp_dump 0755 system system
     mkdir /data/vendor/connsyslog 0755 system system
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
 on property:vendor.all.modules.ready=1
     insmod /vendor/lib/modules/wmt_drv.ko
@@ -8,6 +11,8 @@ on property:vendor.all.modules.ready=1
 on property:vendor.connsys.driver.ready=yes
     insmod /vendor/lib/modules/bt_drv.ko
     chown bluetooth bluetooth /proc/driver/bt_dbg
+    insmod /vendor/lib/modules/wmt_chrdev_wifi.ko
+    insmod /vendor/lib/modules/wlan_drv_gen4m.ko
 
 service wmt_loader /vendor/bin/wmt_loader
     class early_hal
