@@ -23,6 +23,13 @@ sh_binary {
 }
 
 prebuilt_etc {
+    name: "init.mt8169.connectivity.rc",
+    src: "etc/init.mt8169.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt8169.rc",
     src: "etc/init.mt8169.rc",
     sub_dir: "init/hw",

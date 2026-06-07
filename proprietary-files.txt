@@ -104,3 +104,8 @@ vendor/lib64/libnvram.so;DISABLE_CHECKELF
 # TEE
 vendor/lib/libtz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libtz_uree.so;DISABLE_CHECKELF
+
+# WMT
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin

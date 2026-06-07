@@ -1,3 +1,4 @@
+import /vendor/etc/init/hw/init.mt8169.connectivity.rc
 import /vendor/etc/init/hw/init.mt8169.usb.rc
 
 on early-init
