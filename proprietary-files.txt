@@ -4,6 +4,11 @@
 vendor/lib/libmtk_drvb.so
 vendor/lib64/libmtk_drvb.so
 
+# Bluetooth
+vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbt-vendor.so
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/hidl_aal_client
