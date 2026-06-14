@@ -1,2 +1,5 @@
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # USB
 vendor.usb.controller=11201000.usb
