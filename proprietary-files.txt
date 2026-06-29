@@ -110,7 +110,7 @@ vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxVdecEx.so;DISABLE_CHECKELF
 vendor/lib/lib_uree_optee_video_secure_al.so;DISABLE_CHECKELF
 vendor/lib/libbwc.so
-vendor/lib/libformatter.so
+vendor/lib/libformatter.so:vendor/lib/libformatter_mtk.so
 vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libmp4enc_sa.ca7.so

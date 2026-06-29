@@ -48,7 +48,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libpuresoftkeymasterdevice.so', 'libpuresoftkeymasterdevice-v30.so')
         .replace_needed('libsoft_attestation_cert.so', 'libsoft_attestation_cert-v30.so'),
     'vendor/lib/libMtkOmxVdecEx.so': blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter_mtk.so')
         .replace_needed('libui.so', 'libui-v30.so'),
+    'vendor/lib/libformatter_mtk.so': blob_fixup()
+        .fix_soname(),
     ('vendor/lib/libh264enc_sa.ca7.so', 'vendor/lib/libmp4enc_sa.ca7.so', 'vendor/lib/libmp4enc_xa.ca7.so',
      'vendor/lib/libthha.so', 'vendor/lib/libvc1dec_sa.ca7.so', 'vendor/lib/libvcodec_oal.so',
      'vendor/lib/libvp8dec_sa.ca7.so', 'vendor/lib/libvp9dec_sa.ca7.so'): blob_fixup()
