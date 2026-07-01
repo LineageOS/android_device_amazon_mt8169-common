@@ -49,6 +49,9 @@ $(call soong_config_set,lineage_health,charging_control_charging_path,/proc/mtk_
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0 0)
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,0 1)
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
