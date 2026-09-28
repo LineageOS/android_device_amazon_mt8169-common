@@ -15,7 +15,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32 \
     audio.bluetooth.default:32 \
     audio.r_submix.default:32 \
-    audio.usb.default:32
+    audio.usb.default:32 \
+    fireos.hardware.audio.service
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
