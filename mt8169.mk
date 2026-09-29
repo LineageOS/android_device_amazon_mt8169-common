@@ -120,6 +120,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+    FrameworksResOverlayCommon \
     MssiFrameworkOverlay \
     MssiNetworkStackOverlay \
     MssiWifiOverlay \
