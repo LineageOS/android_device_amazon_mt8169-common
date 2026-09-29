@@ -119,6 +119,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+    MssiFrameworkOverlay \
+    MssiNetworkStackOverlay \
+    MssiWifiOverlay
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
