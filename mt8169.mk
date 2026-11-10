@@ -101,7 +101,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/amazon \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/mediatek/wlan/wifi_hal
 
 # SPL
 VENDOR_SECURITY_PATCH := 2021-03-05
@@ -140,7 +141,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
-    libwifi-hal-wrapper:64 \
     wpa_supplicant \
     wpa_supplicant.conf
 
