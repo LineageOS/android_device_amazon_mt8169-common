@@ -10,5 +10,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Verified Boot
+PRODUCT_PACKAGES += \
+    android.software.verified_boot.prebuilt.xml
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/mt8169-common/mt8169-common-vendor.mk)
