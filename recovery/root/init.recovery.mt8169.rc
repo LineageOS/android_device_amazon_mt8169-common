@@ -1,0 +1,9 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    setprop sys.usb.configfs 1
+    setprop sys.usb.controller "11201000.usb"
+    setprop vendor.usb.controller "11201000.usb"
