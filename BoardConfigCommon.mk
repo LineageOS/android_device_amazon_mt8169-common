@@ -80,6 +80,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt8169
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.emmc
+
 # Verified Boot
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_ENABLE := true
