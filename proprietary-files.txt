@@ -90,6 +90,10 @@ vendor/lib64/libsoft_attestation_cert.so:vendor/lib64/libsoft_attestation_cert-v
 # Modules
 vendor/etc/init.insmod.mt8169.cfg
 
+# NVRAM
+vendor/lib/libnvram.so;DISABLE_CHECKELF
+vendor/lib64/libnvram.so;DISABLE_CHECKELF
+
 # TEE
 vendor/lib/libtz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libtz_uree.so;DISABLE_CHECKELF

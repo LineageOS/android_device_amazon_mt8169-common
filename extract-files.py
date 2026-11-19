@@ -28,6 +28,7 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'libaal_mtk',
+        'libcustom_nvram',
         'libdpframework',
         'libpq_prot',
         'libteec',
