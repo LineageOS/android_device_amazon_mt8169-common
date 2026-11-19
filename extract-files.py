@@ -22,6 +22,7 @@ namespace_imports = [
     'device/amazon/mt8169-common',
     'hardware/amazon',
     'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
 ]
 
 lib_fixups: lib_fixups_user_type = {

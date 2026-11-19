@@ -68,6 +68,13 @@ $(call soong_config_set_bool,libion,legacy_impl,true)
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek
@@ -107,6 +114,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/amazon \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/mediatek/wlan/wifi_hal
 
 # SPL

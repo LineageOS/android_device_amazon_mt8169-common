@@ -99,6 +99,38 @@ vendor/lib64/libkeymaster_portable.so:vendor/lib64/libkeymaster_portable-v30.so;
 vendor/lib64/libpuresoftkeymasterdevice.so:vendor/lib64/libpuresoftkeymasterdevice-v30.so;FIX_SONAME
 vendor/lib64/libsoft_attestation_cert.so:vendor/lib64/libsoft_attestation_cert-v30.so;FIX_SONAME
 
+# Media
+vendor/etc/init/android.hardware.media.omx@1.0-mtk-service.rc
+vendor/etc/init/vpud.rc
+vendor/etc/mtk_omx_core.cfg
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxVdecEx.so;DISABLE_CHECKELF
+vendor/lib/lib_uree_optee_video_secure_al.so;DISABLE_CHECKELF
+vendor/lib/libbwc.so
+vendor/lib/libformatter.so
+vendor/lib/libh264enc_sa.ca7.so
+vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmp4enc_xa.ca7.so
+vendor/lib/libmtcloader.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/libthha.so
+vendor/lib/libvc1dec_sa.ca7.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_utility.so
+vendor/lib/libvcodecdrv.so
+vendor/lib/libvp8dec_sa.ca7.so
+vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libvpud_vcodec.so
+vendor/lib/vendor.mediatek.hardware.pq@2.1.so
+vendor/lib/vendor.mediatek.hardware.pq@2.2.so
+vendor/lib/vendor.mediatek.hardware.pq@2.3.so
+vendor/lib/vendor.mediatek.hardware.pq@2.4.so
+vendor/lib/vendor.mediatek.hardware.pq@2.5.so
+
 # Modules
 vendor/etc/init.insmod.mt8169.cfg
 
@@ -113,6 +145,7 @@ vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
 
 # TEE
+vendor/lib/libgz_uree.so
 vendor/lib/libtz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libtz_uree.so;DISABLE_CHECKELF
 
