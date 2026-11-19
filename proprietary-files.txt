@@ -4,6 +4,9 @@
 vendor/lib/libmtk_drvb.so
 vendor/lib64/libmtk_drvb.so
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mt8169.so;DISABLE_CHECKELF
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.optee
 vendor/etc/init/android.hardware.keymaster@4.0-service.optee.rc
