@@ -1,0 +1,4 @@
+hal_client_domain(mtk_hal_bluetooth, hal_idme)
+
+allow mtk_hal_bluetooth bt_data_file:dir search;
+allow mtk_hal_bluetooth bt_data_file:file r_file_perms;

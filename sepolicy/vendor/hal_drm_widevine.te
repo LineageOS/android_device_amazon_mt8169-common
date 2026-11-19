@@ -1,0 +1,1 @@
+dontaudit hal_drm_widevine configfs:dir search;

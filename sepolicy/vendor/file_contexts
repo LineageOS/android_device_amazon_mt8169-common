@@ -1,0 +1,2 @@
+# Binaries
+/vendor/bin/hw/hidl_aal_client                                                      u:object_r:hidl_aal_client_exec:s0

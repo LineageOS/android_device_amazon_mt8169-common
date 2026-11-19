@@ -109,6 +109,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 include device/lineage/sepolicy/libion/sepolicy.mk
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 include hardware/amazon/sepolicy/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ALGORITHM := SHA256_RSA2048

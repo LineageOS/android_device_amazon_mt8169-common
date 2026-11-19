@@ -1,0 +1,3 @@
+allow mediacodec mitee_client_device:chr_file rw_file_perms;
+
+dontaudit mediacodec default_prop:file r_file_perms;

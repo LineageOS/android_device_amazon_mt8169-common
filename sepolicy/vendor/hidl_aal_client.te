@@ -1,0 +1,7 @@
+type hidl_aal_client, domain;
+type hidl_aal_client_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hidl_aal_client)
+
+hal_client_domain(hidl_aal_client, hal_mtk_pq)
+hwbinder_use(hidl_aal_client)
+get_prop(hidl_aal_client, hwservicemanager_prop)

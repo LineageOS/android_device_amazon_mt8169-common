@@ -1,0 +1,32 @@
+# GPU
+genfscon sysfs /devices/platform/13040000.mali/devfreq/13040000.mali                                                                 u:object_r:sysfs_gpu:s0
+
+# Input
+genfscon sysfs /devices/platform/11008000.i2c1/i2c-1/1-0001/gesture_wakeup                                                           u:object_r:sysfs_tap_to_wake:s0
+genfscon sysfs /devices/platform/11008000.i2c1/i2c-1/1-0038/gesture_wakeup                                                           u:object_r:sysfs_tap_to_wake:s0
+genfscon sysfs /devices/platform/11008000.i2c1/i2c-1/1-0041/0018:222A:FFF1.0001                                                      u:object_r:sysfs_uhid:s0
+genfscon sysfs /devices/platform/11008000.i2c1/i2c-1/1-0041/gesture_wakeup                                                           u:object_r:sysfs_tap_to_wake:s0
+
+# Power supply
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt6358-gauge                                                   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0034/mt6370_pmu_charger/power_supply                                          u:object_r:sysfs_batteryinfo:s0
+
+# Proc
+genfscon proc /sys/vm/min_free_kbytes                                                                                                u:object_r:proc_min_free_kbytes:s0
+
+# RTC
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt6358-rtc/rtc                                                 u:object_r:sysfs_rtc:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt6358-gauge/power_supply/battery/wakeup                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt6358-gauge/power_supply/mtk-gauge/wakeup                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt6358-rtc/rtc/rtc0/wakeup                                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt6358-rtc/wakeup                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358/mt635x-auxadc/wakeup                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0034/mt6370_pmu_charger/power_supply/mt6370_pmu_charger/wakeup                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0034/wakeup                                                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-004e/tcpc/type_c_port0/wakeup                                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-004e/wakeup                                                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11008000.i2c1/i2c-1/1-0041/0018:222A:FFF1.0001/power_supply/hid-0018:222A:FFF1.0001-battery/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1a000000.camisp/wakeup                                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:hall_sensors/wakeup                                                                         u:object_r:sysfs_wakeup:s0
