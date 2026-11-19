@@ -1,5 +1,9 @@
 # Unpinned blobs from Amazon/tungsten/tungsten:11/RS8338.3344N/0030132736000:user/amz-p,release-keys
 
+# DRVB
+vendor/lib/libmtk_drvb.so
+vendor/lib64/libmtk_drvb.so
+
 # Modules
 vendor/etc/init.insmod.mt8169.cfg
 
