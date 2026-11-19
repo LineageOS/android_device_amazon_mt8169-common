@@ -72,7 +72,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V1-ndk_platform.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
-    'vendor/lib64/libaalservice.so': blob_fixup()
+    ('vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
 

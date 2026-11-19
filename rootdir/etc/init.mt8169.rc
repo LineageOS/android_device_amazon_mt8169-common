@@ -145,6 +145,9 @@ on boot
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp 0
 
 on property:vendor.all.modules.ready=1
+    # Camera
+    start camerahalserver
+
     # Health
     chown system system /proc/mtk_battery_cmd/current_cmd
 
