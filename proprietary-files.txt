@@ -106,6 +106,12 @@ vendor/etc/init.insmod.mt8169.cfg
 vendor/lib/libnvram.so;DISABLE_CHECKELF
 vendor/lib64/libnvram.so;DISABLE_CHECKELF
 
+# Sensors
+vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
+vendor/lib64/hw/sensors.mt8169.so
+vendor/lib64/libksensor.so
+vendor/lib64/libsensor_custom.so
+
 # TEE
 vendor/lib/libtz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libtz_uree.so;DISABLE_CHECKELF

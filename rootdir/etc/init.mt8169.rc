@@ -148,6 +148,9 @@ on property:vendor.all.modules.ready=1
     # Health
     chown system system /proc/mtk_battery_cmd/current_cmd
 
+    # Sensors
+    start vendor.sensors-hal-2-0
+
 on property:sys.boot_completed=1
     # Performance
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
@@ -179,6 +182,13 @@ service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.mt8169.cfg
     group root system
     disabled
     oneshot
+
+service vendor.sensors-hal-2-0 /vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
+    class main
+    user system
+    group system
+    rlimit rtprio 10 10
+    disabled
 
 service watchdogd /system/bin/watchdogd 20 10
     class core
