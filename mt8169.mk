@@ -110,6 +110,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    libmtkperf_client \
+    libmtkperf_client_vendor \
+    libperfctl_vendor \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
@@ -137,6 +145,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/amazon \
+    hardware/google/interfaces \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/wlan/wifi_hal
