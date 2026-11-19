@@ -68,6 +68,13 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 
+# Fuelgauge
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib/libfgauge_gm30.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mt8169.so;DISABLE_CHECKELF
 
