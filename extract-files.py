@@ -47,6 +47,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libkeymaster_portable.so', 'libkeymaster_portable-v30.so')
         .replace_needed('libpuresoftkeymasterdevice.so', 'libpuresoftkeymasterdevice-v30.so')
         .replace_needed('libsoft_attestation_cert.so', 'libsoft_attestation_cert-v30.so'),
+    ('vendor/lib/android.hardware.audio.common-util-v30.so', 'vendor/lib/android.hardware.audio.common@6.0-util-v30.so'): blob_fixup()
+        .replace_needed('android.hardware.audio.common-util.so', 'android.hardware.audio.common-util-v30.so')
+        .replace_needed('android.hardware.audio.common@6.0-util.so', 'android.hardware.audio.common@6.0-util-v30.so')
+        .replace_needed('libmedia_helper.so', 'libmedia_helper-v30.so'),
     'vendor/lib/libMtkOmxVdecEx.so': blob_fixup()
         .replace_needed('libformatter.so', 'libformatter_mtk.so')
         .replace_needed('libui.so', 'libui-v30.so'),
