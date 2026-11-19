@@ -72,6 +72,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V1-ndk_platform.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    ('vendor/lib64/lib3a.ae.so', 'vendor/lib64/lib3a.ae.stat.so', 'vendor/lib64/lib3a.alsflicker.so',
+     'vendor/lib64/libaaa_ltm.so'): blob_fixup()
+        .add_needed('liblog.so'),
+    'vendor/lib64/lib3a.flash.so': blob_fixup()
+        .add_needed('liblog.so')
+        .add_needed('libm.so'),
+    'vendor/lib64/lib3a.flicker.so': blob_fixup()
+        .add_needed('libm.so'),
     ('vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
