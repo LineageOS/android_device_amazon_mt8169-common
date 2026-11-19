@@ -151,6 +151,10 @@ on property:vendor.all.modules.ready=1
     # Sensors
     start vendor.sensors-hal-2-0
 
+    # Thermal
+    setprop vendor.thermal.link_ready 0
+    start vendor.thermal.symlinks
+
 on property:sys.boot_completed=1
     # Performance
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
