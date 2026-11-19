@@ -122,7 +122,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     MssiFrameworkOverlay \
     MssiNetworkStackOverlay \
-    MssiWifiOverlay
+    MssiWifiOverlay \
+    TetheringResOverlayCommon
 
 # Permissions
 PRODUCT_COPY_FILES += \
