@@ -27,6 +27,9 @@ namespace_imports = [
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'libaal_mtk',
+        'libdpframework',
+        'libpq_prot',
         'libteec',
     ): lib_fixup_remove,
 }

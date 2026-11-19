@@ -156,6 +156,14 @@ on property:sys.boot_completed=1
     write /sys/block/mmcblk0/queue/nr_requests 128
     write /sys/block/mmcblk0/queue/read_ahead_kb 512
 
+on property:vendor.hwc.video_mode=0
+    # Display
+    exec /vendor/bin/hw/hidl_aal_client 0
+
+on property:vendor.hwc.video_mode=1
+    # Display
+    exec /vendor/bin/hw/hidl_aal_client 2
+
 service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.mt8169.cfg
     user root
     group root system
