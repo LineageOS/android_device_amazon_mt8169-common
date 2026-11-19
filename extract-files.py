@@ -14,6 +14,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/amazon/mt8169-common',
+    'hardware/amazon',
     'hardware/mediatek',
 ]
 
