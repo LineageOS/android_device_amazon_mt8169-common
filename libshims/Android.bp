@@ -1,0 +1,13 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libaemgr_shim",
+    srcs: ["aemgr.cpp"],
+    shared_libs: ["liblog"],
+    ldflags: ["-Wl,-z,global"],
+    compile_multilib: "64",
+    vendor: true,
+}

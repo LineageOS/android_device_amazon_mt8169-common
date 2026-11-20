@@ -38,6 +38,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.prebuilt.xml
 
 # Camera
+PRODUCT_PACKAGES += \
+    libaemgr_shim
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
