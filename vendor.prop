@@ -63,3 +63,8 @@ persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
 vendor.connsys.driver.ready=no
+
+# ZRAM
+mmd.zram.comp_algorithm=lz4
+mmd.zram.enabled=true
+mmd.zram.size=25%
